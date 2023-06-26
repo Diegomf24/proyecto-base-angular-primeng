@@ -16,4 +16,8 @@ export class UsuariosService {
   public getAllUsers(): Observable<Usuario[]> {
     return this.httpClient.get<Usuario[]>(this.url + '/usuarios');
   }
+
+  public deleteUser(usuario: Usuario): Observable<Usuario> {
+    return this.httpClient.delete<Usuario>(this.url + /usuarios/ + usuario.id);
+  }
 }

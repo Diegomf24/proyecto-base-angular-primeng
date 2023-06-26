@@ -1,3 +1,4 @@
+<p-toast></p-toast>
 <p-card styleClass="shadow-6"  >
   <p-table  [value]="usuarios"
             [tableStyle]="{ 'min-width': '50rem' }"
@@ -13,6 +14,7 @@
           <th pSortableColumn="nombre"> <p-tag severity="warning" [rounded]="true" value="Nombre"></p-tag> <p-sortIcon field="nombre"></p-sortIcon></th>
           <th><p-tag severity="primary" [rounded]="true" value="Email"></p-tag></th>
           <th><p-tag severity="info" [rounded]="true" value="Admin"></p-tag></th>
+          <th>Acciones</th>
         </tr>
       </ng-template>
       <ng-template pTemplate="body" let-usuario>
@@ -25,6 +27,12 @@
             <i *ngIf="usuario.admin" class="pi pi-check-circle" style="color: green"></i>
             <i *ngIf="!usuario.admin" class="pi pi-times-circle" style="color: red"></i>
           </td>
+        <td>
+          <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+            <p-button icon="pi pi-pencil" styleClass="p-button-rounded p-button-text p-button-raised p-button-danger" ></p-button>
+            <p-button (click)="deleteUser(usuario)" icon="pi pi-trash" styleClass="p-button-rounded p-button-text p-button-raised p-button-warning" ></p-button>
+          </div>
+        </td>
         </tr>
       </ng-template>
     </p-table>
