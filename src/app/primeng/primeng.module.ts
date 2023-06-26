@@ -7,6 +7,8 @@ import {ToastModule} from "primeng/toast";
 import {DialogModule} from "primeng/dialog";
 import {CardModule} from "primeng/card";
 import {TableModule} from "primeng/table";
+import {ProgressBar} from "primeng/progressbar";
+import {TagModule} from "primeng/tag";
 
 
 
@@ -22,6 +24,7 @@ import {TableModule} from "primeng/table";
     MenubarModule,
     ToastModule,
     TableModule,
+    TagModule
   ]
 
 

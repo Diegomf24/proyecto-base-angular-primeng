@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PageUsuariosComponent } from './components/page-usuarios/page-usuarios.component';
 import {PrimengModule} from "../primeng/primeng.module";
+import {ProgressBarModule} from "primeng/progressbar";
 
 
 
@@ -11,7 +12,8 @@ import {PrimengModule} from "../primeng/primeng.module";
   ],
   imports: [
     CommonModule,
-    PrimengModule
+    PrimengModule,
+    ProgressBarModule
   ]
 })
 export class UsuariosModule { }

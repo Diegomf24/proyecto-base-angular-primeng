@@ -40,6 +40,11 @@ export class NavComponent {
         label: 'Incidencias',
         icon: PrimeIcons.INBOX,
         disabled: true,
+      },
+      {
+        label: 'Cerrar Sesión',
+        icon: PrimeIcons.POWER_OFF,
+        disabled: true,
       }
     ];
   }
